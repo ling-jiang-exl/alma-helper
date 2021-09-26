@@ -1,0 +1,7 @@
+html, body {
+    width: 500px;
+  }
+
+form > * {
+    margin: 6px;
+}

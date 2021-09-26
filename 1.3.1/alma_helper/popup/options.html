@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css"/>
+  </head>
+
+  <body>
+    <h2>Settings</h2>
+    <p class="description">Select the fields you want to use in Search Resources form in MDE.</p>
+    <form id="settings">
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.anyField" class="remote-field">
+        <label for="SearchExternalFormView.anyField">Any Field</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.title" class="remote-field">
+        <label for="SearchExternalFormView.title">Title</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.creator" class="remote-field">
+        <label for="SearchExternalFormView.creator">Creator</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.subjects" class="remote-field">
+        <label for="SearchExternalFormView.subjects">Subjects</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.isbn" class="remote-field">
+        <label for="SearchExternalFormView.isbn">ISBN</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.issn" class="remote-field">
+        <label for="SearchExternalFormView.issn">ISSN</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.systemNumber" class="remote-field">
+        <label for="SearchExternalFormView.systemNumber">System Number</label><br>
+      </div>
+      <div>
+        <input type="checkbox" id="SearchExternalFormView.yearOfPublication" class="remote-field">
+        <label for="SearchExternalFormView.yearOfPublication">Year of Publication</label><br>
+      </div>
+      <button id="btn_submit" class="browser-style" type="submit">Save settings</button>
+    </form>
+
+    <script src="options.js"></script>
+  </body>
+
+</html>

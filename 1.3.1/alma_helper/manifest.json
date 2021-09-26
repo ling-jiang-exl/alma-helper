@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+    "name": "Alma Helper",
+    "version": "1.3",
+    "author": "jackcyang@foxmail.com",
+    "description": "Alma helper",
+    "homepage_url": "http://lib.must.edu.mo",
+    "icons": {
+        "48": "icons/must_logo_48.png"
+    },
+    "background": {
+        "scripts": [
+            "js/background/ajax_detector.js",
+            "js/background/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.alma.exlibrisgroup.com/*",
+                "https://*.alma.exlibrisgroup.com.cn/*"
+            ],
+            "js": [
+                "js/cf_injection.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage",
+        "webRequest",
+        "activeTab",
+        "https://*.alma.exlibrisgroup.com/*",
+        "https://*.alma.exlibrisgroup.com.cn/*"
+    ],
+    "options_page": "popup/options.html",
+    "browser_action": {
+        "default_icon": "icons/must_logo_48.png",
+        "default_title": "Alma Helper",
+        "default_popup": "popup/options.html"
+    }
+}
